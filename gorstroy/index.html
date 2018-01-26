@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>Проектирование зданий и сооружений в Новосибирске</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 logo_header">
+						<img src="img/logo.png" alt="Горстрой логотип"  class="img-fluid">
+					</div>
+					<div class="col-md-4 offset-md-1 description">
+						<h5>Проектирование зданий <br>и сооружений в Новосибирске</h5>
+					</div>
+					<div class="col-md-2 phone_header">
+						<a href="tel:+73832238974"><b>8 (383) 223-89-74</b></a>
+						<span>(многоканальный)</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="#callbackModal" data-toggle="modal" class="btn  callback_btn">Заказать обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav id="top-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<ul class="list_inline">
+							<!--Закрывающие теги у li отсутсвуют намеренно. Это один из способов убрать отступы между inline-block элементами -->
+							<li>
+								<a href="#types-of-objects">Чем мы можем Вам помочь</a>
+							<li>
+								<a href="#about-company">О компании</a>
+							<li>
+								<a href="#why-we">Преимущества</a>
+							<li>
+								<a href="#how-we-work">Как мы проектируем</a>
+							<li>
+								<a href="#examples">Примеры объектов</a>
+							<li>
+								<a href="#guarantee">Гарантия</a>
+							<li>
+								<a href="#order-form">Оставить заявку</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section class="promo-header">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h1>Готовый проект Вашего здания или сооружения <br>«под ключ» с разрешительной документацией <br>и согласованием в надзорных органах</h1>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-7">
+						<div class="row no-glitter">
+							<div class="col-md-4 text-center balls-item">
+								<img src="img/balls-item-1.png" alt="преимущество-1" class="img-fluid">
+								<p><b>Комплексный проект,</b><br>учитывающий<br>все нормы и этапы<br>строительства</p>
+							</div>
+							<div class="col-md-4 text-center balls-item">
+								<img src="img/balls-item-2.png" alt="преимущество-2" class="img-fluid">	
+								<p><b>100% гарантия<br>согласования</b><br>проекта и получения<br>разрешения<br>на строительство</p>
+							</div>
+							<div class="col-md-4 text-center balls-item">
+								<img src="img/balls-item-3.png" alt="преимущество-3" class="img-fluid">
+								<p><b>Точная смета</b><br>(спецификация)<br>и подробное<br>Техническое задание <br>для строителей</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 offset-md-1">
+						<form action="send.php" method="post" class="text-center">
+							<p>Оставьте заявку <br>и получите расчет сметы <br>Вашего проекта </p>
+							<input type="hidden" name="what" value="получить рассчет сметы (шапка)">
+							<input type="text" placeholder="Ваше Имя" name="name" required class="form-control">
+							<input type="text" placeholder="Ваш телефон" name="phone" id="phone-1" required class="form-control">
+							<input type="submit" class="btn form-control" value="Отправить заявку">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="types-of-objects">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Мы проектируем</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 text-center">
+
+						<img src="img/type_object_1.jpg" alt="Производственные объекты" class="img-fluid">
+						<div class="to_list_container">
+						<h5>Производственные <br>объекты</h5>
+							<ul>
+								<li>Склады</li>
+								<li>Ангары</li>
+								<li>Заводы</li>
+								<li>Фабрики</li>
+								<li>Логистические <br>и распределительные <br>центры</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-md-3 text-center">
+						
+						<img src="img/type_object_2.jpg" alt="Жилые объекты" class="img-fluid">
+						<div class="to_list_container">
+							<h5>Жилые объекты</h5>
+							<ul>
+								<li>Многоквартирные <br>жилые дома</li>
+								<li>Таунхаусы</li>
+								<li>Коттеджные поселки</li>
+							</ul>
+						</div>
+						
+					</div>	
+					<div class="col-md-3 text-center">
+
+						<img src="img/type_object_3.jpg" alt="Общественные объекты" class="img-fluid">
+						<div class="to_list_container">
+							<h5>Общественные <br>объекты</h5>
+							<ul>
+								<li>Административные <br>здания</li>
+								<li>Многофункциональные <br>центры</li>
+								<li>Спортивные сооружения</li>
+								<li>Школы</li>
+								<li>Детские сады</li>
+							</ul>
+						</div>
+					</div>					
+					<div class="col-md-3 text-center">
+
+						<img src="img/type_object_4.jpg" alt="Коммерческие объекты" class="img-fluid">
+						<div class="to_list_container">
+							<h5>Коммерческие<br>объекты</h5>
+							<ul>
+								<li>Торговые центры</li>
+								<li>Стрелковые тиры</li>
+								<li>Базы отдыха</li>
+								<li>Гостиницы, отели <br>апартаменты</li>
+								<li>Автоцентры</li>
+								<li>Магазины</li>
+							</ul>
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+		</section>
+
+		<section class="support">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Комплексно поддерживаем клиента по всем направлениям</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-3">
+								<img src="img/support-icon-1.png" alt="поддержка-1" class="img-fluid">
+							</div>
+							<div class="col-md-9 align-middle">
+								<h5>Техническая экспертиза <br>и обследование зданий</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-3">
+								<img src="img/support-icon-2.png" alt="поддержка-2" class="img-fluid">		
+							</div>
+							<div class="col-md-9">
+								<h5>Юридическая <br>поддержка</h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row no-gutters align-items-center">
+							<div class="col-md-3">
+								<img src="img/support-icon-3.png" alt="поддержка-3" class="img-fluid">
+							</div>
+							<div class="col-md-9">
+								<h5>Согласование <br>
+								проекта и получение <br>
+								разрешения <br>
+								на строительство</h5>				
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 support_text_item">
+						<p>Оцениваем техническое состояние здания <br> 
+						и выдаем заключение на необходимость его <br>
+						реконструкции</p>
+					</div>
+					<div class="col-md-4 support_text_item">
+						<p>Юридически помогаем и консультируем <br>
+						клиента при самостоятельном оформлении <br>
+						разрешения в надзорных органах</p>	
+					</div>
+					<div class="col-md-4 support_text_item">
+						<p>Согласовываем проектную документацию <br>в надзорных органах и получаем разрешение <br>на строительство</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer" id="order-form">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Уже знаете, что хотите построить на Вашем участке?</h3>
+						<p>Оставьте заявку, и мы разработаем проект и детально рассчитаем смету для Вас</p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col offer-form-container">
+						<form action="send.php" method="post">
+							<input type="hidden" name="what" value="получить расчет сметы (поддержка)">
+							<div class="row">
+								<div class="col-md-4 text-right">
+									<input type="text" placeholder="Ваше Имя" name="name" required>
+								</div>
+								<div class="col-md-4 text-right">
+									<input type="text" name="phone" id="phone-2" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-md-4 text-center">
+									<input class="btn" type="submit" value="Отправить заявку">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="about-company">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>О компании</h3>
+						<p><b>ПСК ГорСтройРемПроект</b> с 2005 года разрабатывает качественную проектную документацию, которая в 100% случаев реализуется <br>в виде готового здания или сооружения. Мы не проектируем то, что невозможно построить. </p>
+						<p>Наши специалисты – профессиональные архитекторы, конструкторы и проектировщики, решающие задачи любой сложности – 
+						от перепланировки офиса до проектирования заводов. Сотрудники нашей организации включены в Национальный реестр <br>специалистов в области проектирования.</p>
+						<p>Нас постоянно рекомендуют в администрациях районов и мэрии города Новосибирска. А наши специалисты регулярно участвуют <br>в качестве экспертов на публичных слушаниях в администрации города.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 achieve-item">
+						<div class="row no-gutters">
+							<div class="col-md-2">
+								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
+							</div>
+							<div class="col-md-9 offset-md-1">
+								<p><b>Более 340 </b><br>реализованных проектов</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-3 achieve-item">
+						<div class="row no-gutters">
+							<div class="col-md-2">
+								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
+							</div>
+							<div class="col-md-9 offset-md-1">
+								<p><b>12 лет</b>  успешного <br>решения задач <br>наших клиентов</p>
+							</div>
+						</div>						
+					</div>
+					<div class="col-md-3 achieve-item">
+						<div class="row no-gutters">
+							<div class="col-md-2">
+								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
+							</div>
+							<div class="col-md-9 offset-md-1">
+								<p><b>88 %</b> клиентов <br> 
+								повторно обращаются <br> 
+								в организацию</p>
+							</div>
+						</div>							
+					</div>
+					<div class="col-md-3 achieve-item">
+						<div class="row no-gutters">
+							<div class="col-md-2">
+								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
+							</div>
+							<div class="col-md-9 offset-md-1">
+								<p><b>67 %</b>  заказчиков <br> 
+								приходят <br>
+								по рекомендации</p>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="why-we">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Почему более 88% клиентов заказывают у нас повторно</h3>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-1.png" alt="причина-1">
+					</div>
+					<div class="col-md-5">
+						<h5>Качественный проект</h5>
+						<p>Проектируем только то, что можно реализовать <br>с учетом текущей градостроительной ситуации, <br>
+						с детальной проработкой всех архитектурных, <br>
+						инженерных и конструкторских решений</p>
+					</div>
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-2.png" alt="причина-2">
+					</div>
+					<div class="col-md-5">
+						<h5>По доступной цене</h5>
+						<p>Мы выполняем проектирование по ценам от 600 р/м2. <br>
+						Окончательная стоимость проекта рассчитывается исходя <br>
+						из технических характеристик и назначения здания</p>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-3.png" alt="причина-3">
+					</div>
+					<div class="col-md-5">
+						<h5>Быстрые сроки</h5>
+						<p>Проектируем только то, что можно реализовать <br>с учетом текущей градостроительной ситуации, <br>
+						с детальной проработкой всех архитектурных, <br>
+ 						инженерных и конструкторских решений</p>
+					</div>
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-4.png" alt="причина-4">
+					</div>
+					<div class="col-md-5">
+						<h5>Техническая поддержка</h5>
+						<p>Подробно консультируем на каждом этапе проектирования. <br>
+						Подскажем, как лучше реализовать идею. Выезжаем <br>
+						на стройку и решаем возникающие по проекту вопросы <br>
+						со строителями.</p>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-5.png" alt="причина-5">
+					</div>		
+					<div class="col-md-5">
+						<h5>Работа на результат</h5>
+						<p>Прорабатываем максимальное количество <br>
+						вариантов и работаем до результата </p>
+					</div>
+					<div class="col-md-1 reason-img-item">
+						<img src="img/reason-icon-6.png" alt="причина-6">
+					</div>			
+					<div class="col-md-5">
+						<h5>Скидки и подарки</h5>
+						<p>При выполнении проекта в нашей организации, Вы получаете скидку 20 % на оформление разрешения <br>на строительство. </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="how-we-work">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Как будет построена работа над Вашим проектом</h3>
+					</div>
+				</div>
+				<div class="row hww-item justify-content-center">
+					<div class="col-md-4 text-center">
+						<img class="img-fluid" src="img/how-we-work-image-1.jpg" alt="Анализ территории">
+					</div>
+					<div class="col-md-7">
+						<h5>1. Анализ территории строительства</h5>
+						<p>Перед началом работы мы проводим тщательный анализ градостроительной  <br>ситуации на участке. По результатам анализа выдаем заключение <br>о возможности или невозможности возведения/реконструирования объекта </p>
+						<ul>
+							<li>✔ Анализ месторасположения земельного участка</li>
+							<li>✔ Заключение о возможности строительства или реконструкции объекта</li>
+							<li>✔ Выбор наиболее перспективного варианта использования земельного участка</li>
+							<li>✔ Разработка концепции будущего объекта</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row hww-item justify-content-center">
+					<div class="col-md-7">
+						<h5>2. Эскизный проект</h5>
+						<p>В эскизном проекте мы предоставим Вам 2 варианта решений объекта. В них уже <br>
+						учтены требования всех градостроительных норм и технических регламентов. <br>
+						Выберите тот, который наиболее понравится Вам.  </p>
+						<ul>
+							<li>✔ Схема планировочной организации земельного участка с размещением на ней <br>объекта строительства и благоустройства территории</li>
+							<li>✔ Архитектурные решения (детальные планы, фасады, разрезы, план кровли)</li>
+							<li>✔ 3D модель объекта</li>
+						</ul>						
+					</div>
+					<div class="col-md-4 text-center">
+						<img class="img-fluid" src="img/how-we-work-image-2.jpg" alt="Эскизный проект">
+					</div>
+				</div>
+				<div class="row hww-item justify-content-center">
+					<div class="col-md-4 text-center">
+						<img class="img-fluid" src="img/how-we-work-image-3.jpg" alt="Проектная документация">
+					</div>
+					<div class="col-md-7">
+						<h5>3.	Проектная документация</h5>
+						<p>Детально разработанный план строительства со всеми инженерно-техническими <br>и архитектурными решениями и полной сметой. Необходим для получения <br>разрешения на строительство или реконструкцию объекта</p>
+						<ul>
+							<li>✔ Схема планировочной организации земельного участка <br>
+							с размещением на ней объекта</li>
+							<li>✔ Архитектурные решения</li>
+							<li>✔ Сведения об инженерном оборудовании, сводный план сетей <br>инженерно-технического обеспечения с обозначением мест подключения</li>
+							<li>✔ Проект организации строительства</li>
+							<li>✔ Перечень мероприятий по охране окружающей среды, обеспечению пожарной <br>
+							безопасности, обеспечению доступа инвалидов, требований энергетической <br>эффективности и требований оснащенности зданий, строений и сооружений <br>
+							приборами учета используемых энергетических ресурсов</li>
+							<li>✔ Требования к обеспечению безопасной эксплуатации о<br>бъектов капитального строительства</li>
+						</ul>						
+					</div>
+				</div>
+				<div class="row hww-item justify-content-center">
+					<div class="col-md-7">
+						<h5>4. Получение разрешения на строительство</h5>
+						<p>После подготовки всей необходимой документации мы согласовываем <br>
+						проект в надзорном органе - управлении архитектурно-строительной <br>
+						инспекции. После согласования Вы получаете разрешение <br>
+						и можете приступать к строительству</p>
+					</div>
+					<div class="col-md-4 text-center">
+						<img class="img-fluid" src="img/how-we-work-image-4.jpg" alt="Получение разрешения">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Остались вопросы? Задайте их нашим специалистам!</h3>
+						<p>Оставьте заявку, нажав на кнопку ниже, и наш специалист проконсультируют Вас по любому вопросу</p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col offer-form-container">
+						<form action="send.php" method="post">
+							<input type="hidden" name="what" value="получить консультацию (как мы работаем)">
+							<div class="row">
+								<div class="col-md-4 text-right">
+									<input type="text" name="name" placeholder="Ваше Имя" required>
+								</div>
+								<div class="col-md-4 text-right">
+									<input type="text" name="phone" id="phone-3" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-md-4 text-center">
+									<input class="btn" type="submit" value="Отправить заявку">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="examples">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Примеры реализованных объектов</h3>
+					</div>
+				</div>
+				<div class="row example-item justify-content-center">
+					<div class="col-md-4">
+						<img class="img-fluid" src="img/portfolio-object-1.jpg" alt="Здание фармацефтики">
+					</div>
+					<div class="col-md-7">
+						<h5>Производственно-складское здание <br>фармацевтической продукции</h5>
+						<p>Площадь 5 700 м2 </p>
+						<b>В чем особенность</b>
+						<p>Задача заключалась в подготовке проекта с учетом не только российских, <br>
+						но и международных стандартов</p>
+						<b>Результат</b>
+						<p>Проект прошел экспертизу без единого замечания.</p>
+					</div>
+				</div>
+				<div class="row example-item justify-content-center">
+					<div class="col-md-7">
+						<h5>Сеть стрелковых тиров</h5>
+						<p>Площадь 5 700 м2 </p>
+						<b>В чем особенность</b>
+						<p>Сложность проектирования заключалась в специальных технических <br>
+						решениях по мерам безопасности. </p>
+						<p>Необходимо было полностью исключить возможность вылета <br>боевых пуль 
+						за пределы сооружения, их рикошетов от стен. Многие <br>компании-проектировщики 
+						отказывали клиенту ввиду сложности реализации данного проекта</p>
+						<b>Результат</b>
+						<p>Нами был подготовлен проект, учитывающий все меры по безопасности данного <br>
+						сооружения. В результате мы прошли с клиентом первую сертификацию, <br>
+						и сейчас сеть стрелковых тиров насчитывает множество филиалов <br>
+						на территории России</p>
+					</div>
+					<div class="col-md-4">
+						<img class="img-fluid" src="img/portfolio-object-2.jpg" alt="Сеть тиров">
+					</div>
+				</div>
+				<div class="row example-item justify-content-center">
+					<div class="col-md-4">
+						<img class="img-fluid" src="img/portfolio-object-3.jpg" alt="Здание из теплостен">
+					</div>
+					<div class="col-md-7">
+						<h5>Строительство зданий из теплоэффективного <br>блока «Теплостен»</h5>
+						<p>Площадь 5 700 м2 </p>
+						<b>В чем особенность</b>
+						<p>В 2006 году в нашу организацию обратилась компания-производитель, <br>
+						планирующая выпускать на рынок новый строительный материал для применения <br>
+						его в строительстве объектов.</p>
+						<p>Перед нашими проектировщиками была поставлена задача, просчитать несущую <br>
+						способность данного блока, а также разработать типовые проектные решения, которые 
+						в последующем массово будут  применяться в сфере проектирования и строительства.</p>
+						<b>Результат</b>
+						<p>Мы стали одними из первых проектировщиков на территории <br>западно-сибирского 
+						округа, которые «просчитали» конструктивную особенность данного материала. </p>
+						<p>Также нами были разработаны строительные узлы, которые впоследствии применялись 
+						многократно, в том числе специалистами других организаций.</p>
+						<p>В настоящее время, этот строительный блок активно применяется в сфере строительства.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="more-objects">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Еще объекты</h3>
+					</div>
+				</div>
+				<div class="row row_objects">
+					<div class="col-md-4"><img src="img/portfolio-object-4.jpg" alt="объект-4" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/portfolio-object-5.jpg" alt="объект-5" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/portfolio-object-6.jpg" alt="объект-6" class="img-fluid"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img src="img/portfolio-object-7.jpg" alt="объект-7" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/portfolio-object-8.jpg" alt="объект-8" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/portfolio-object-9.jpg" alt="объект-9" class="img-fluid"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Проконсультируйтесь со специалистом по поводу <br>строительства Вашего объекта!</h3>
+						<p>Оставьте заявку, нажав на кнопку ниже, и наш специалист подберет для Вас наиболее перспективные варианты размещения объекта</p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col offer-form-container">
+						<form action="send.php" method="post">
+							<input type="hidden" name="what" value="подобрать вариант размещения объекта (примеры объектов)">
+							<div class="row">
+								<div class="col-md-4 text-right">
+									<input type="text" name="name" placeholder="Ваше Имя" required>
+								</div>
+								<div class="col-md-4 text-right">
+									<input type="text" name="phone" id="phone-4" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-md-4 text-center">
+									<input class="btn" type="submit" value="Отправить заявку">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="guarantee">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11 offset-md-1 text-center guarantee-block">
+						<h3>Гарантия на получение разрешения на строительство</h3>
+						<p>Мы гарантируем, что при заказе проекта у нас, Вы успешно пройдете экспертизу проекта, <br>получите разрешение на строительство и введёте объект капитального строительства в эксплуатацию.</p>
+					</div>
+				</div>
+			</div>
+		</section>	
+
+		<section class="clients">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>С нами работают и нас рекомендуют</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"><img src="img/clients/client-logo-1.jpg" alt="клиент-1" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-2.jpg" alt="клиент-2" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-3.jpg" alt="клиент-3" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-4.jpg" alt="клиент-4" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-5.jpg" alt="клиент-5" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-6.jpg" alt="клиент-6" class="img-fluid"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"><img src="img/clients/client-logo-7.jpg" alt="клиент-7" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-8.jpg" alt="клиент-8" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-9.jpg" alt="клиент-9" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-10.jpg" alt="клиент-10" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-11.jpg" alt="клиент-11" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-12.jpg" alt="клиент-12" class="img-fluid"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"><img src="img/clients/client-logo-13.jpg" alt="клиент-13" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-14.jpg" alt="клиент-14" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-15.jpg" alt="клиент-15" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-16.jpg" alt="клиент-16" class="img-fluid"></div>
+					<div class="col-md-2"><img src="img/clients/client-logo-17.jpg" alt="клиент-17" class="img-fluid"></div>
+				</div>
+			</div>
+		</section>	
+
+		<section class="sro">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Мы являемся членами СРО</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img src="img/certificates/sro-1.jpg" alt="сро-1" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/certificates/sro-2.jpg" alt="сро-2" class="img-fluid"></div>
+					<div class="col-md-4"><img src="img/certificates/sro-3.jpg" alt="сро-3" class="img-fluid"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Ответы на часто задаваемые вопросы</h3>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 faq-item">	
+						<h6>Можно ли обойтись без проекта?</h6>
+						<p>Нет. Без проекта строительство невозможно. <br>Строители просто не начнут работу без него</p>
+					</div>
+					<div class="col-md-6 faq-item">
+						<h6>Что будет, если проект <br>не пройдет экспертизу?</h6>
+						<p>Проекта, не прошедшего экспертизу, за 12 лет <br>работы в истории нашей организации не было</p>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-6 faq-item">
+						<h6>А вдруг мы закажем и оплатим <br>проект, а его не согласуют?</h6>
+						<p>Наша компания проектирует только то, что возможно <br>в последующем согласовать и построить</p>
+					</div>
+					<div class="col-md-6 faq-item">
+						<h6>А если в ходе строительства возникнут <br>какие-то вопросы у строителей по проекту?</h6>
+						<p>Никаких проблем. Мы выезжаем на строительную <br>
+						площадку и общаемся со строителями, решая <br>
+						все технические вопросы.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="five-steps">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>5 шагов к готовому проекту</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col five-steps-wrapper">
+						<div class="row">
+							<div class="col-md-4 offset-md-2 five-steps-item-1">
+								<b>Уточняем детали</b>
+							</div>
+							<div class="col-md-4 offset-md-2 five-steps-item-1">
+								<b>Проектируем объект</b>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 text-center five-steps-item-2">
+								<b>Оставляете заявку</b>
+							</div>
+							<div class="col-md-5 text-center five-steps-item-2">
+								<b>Разрабатываем <br>Техническое задание</b>
+							</div>
+							<div class="col-md-3  text-center five-steps-item-2">
+								<b>Готовый проект <br>и разрешение <br>на строителство <br>у Вас на руках</b>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+		<section class="offer">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Сделайте первый шаг! Оставьте заявку в форме ниже, <br>и мы рассчитаем для Вас проект и смету!</h3>
+						<p>Оставьте заявку, нажав на кнопку ниже, и наш специалист подберет для Вас наиболее перспективные варианты размещения объекта</p>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col offer-form-container">
+						<form action="send.php" method="post">
+							<input type="hidden" name="what" value="подобрать вариант размещения объекта (5 шагов)">
+							<div class="row">
+								<div class="col-md-4 text-right">
+									<input type="text" name="name" placeholder="Ваше Имя" required>
+								</div>
+								<div class="col-md-4 text-right">
+									<input type="text" name="phone" id="phone-5" placeholder="Ваш телефон" required>
+								</div>
+								<div class="col-md-4 text-center">
+									<input class="btn" type="submit" value="Отправить заявку">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="map">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<h3>Где мы находимся</h3>
+					</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-md-5 point-map">
+						<p>г. Новосибирск, ул. Октябрьская, 42 офис 618 <br>(остановка кинотеатр Маяковского, центр города)</p>
+					</div>
+					<div class="col-md-3 phone-map">
+						<b class="phone-number">8 (383) 223-89-74</b>
+						<span>(многоканальный)</span>
+					</div>
+					<div class="col-md-2 email-map">
+						<p>2238974@mail.ru</p>
+					</div>
+					<div class="col-md-2 work-days-map">
+						<p><b>9.00-18.00</b> без обеда <br>
+						Выходной: <b>суббота, <br>воскресенье</b></p>
+					</div>
+				</div>
+
+			</div>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4fb7df7334af97211523078a2b6e97070a3c95aa9468ba879cfa6c50e629719e&amp;width=100%25&amp;height=520&amp;lang=ru_RU&amp;scroll=false"></script>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<img src="img/logo.png" alt="Горстрой логотип"  class="img-fluid">
+					</div>
+					<div class="col-md-9 offset-md-1">
+						<div class="row">
+							<div class="col-md-4 email-footer">
+								<p>2238974@mail.ru</p>
+							</div>
+							<div class="col-md-4 work-days-footer">
+								<p><b>9.00-18.00</b> без обеда <br>
+								Выходной: <b>суббота, <br>воскресенье</b></p>			
+							</div>
+							<div class="col-md-4 phone-footer">
+								<a href="tel:+73832238974"><b>8 (383) 223-89-74</b></a>
+								<span>(многоканальный)</span>		
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<p>© 2017. Все права защищены.</p>
+							</div>
+							<div class="col-md-4">
+							<a href="#callbackModal" data-toggle="modal" class="btn callback_btn">Заказать обратный звонок</a>							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Modal -->
+		<div class="modal" id="callbackModal" tabindex="-1" role="dialog">
+		  <div class="modal-dialog modal-sm" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header text-center">
+		      	
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal_header text-center">
+		      	<div class="row">
+		      		<div class="col">
+		      			<h5>Оставьте заявку <br>на обратный звонок</h5>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col">
+			      		<form action="send.php" method="post">
+			      			<input type="hidden" name="what" value="заказать обратный звонок">
+			      			<div class="col">
+			      				<input type="text" placeholder="Ваше Имя" name="name" required class="form-control">
+			      			</div>
+			      			<div class="col">
+								<input type="text" placeholder="Ваш телефон" name="phone" id="phone-6" required class="form-control">
+							</div>
+							<div class="col">
+								<input type="submit" class="btn form-control" value="Отправить заявку">
+							</div>	
+
+			      		</form>
+		      		</div>
+		      	</div>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>	
+
+
+
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!-- Скрипт фиксированного меню -->
+		<script>
+			var h_hght = 142; // высота шапки
+			var h_mrg = 0;    // отступ когда шапка уже не видна
+			                 
+			$(function(){
+			 
+			    var elem = $('#top-nav');
+			    var top = $(this).scrollTop();
+			     
+			    if(top > h_hght){
+			        elem.css('top', h_mrg);
+			    }           
+			     
+			    $(window).scroll(function(){
+			        top = $(this).scrollTop();
+			         
+			        if (top+h_mrg < h_hght) {
+			            elem.css('top', (h_hght-top));
+			        } else {
+			            elem.css('top', h_mrg);
+			        }
+			    });
+			 
+			});
+		</script>
+
+		<!-- Скрипт плавной прокрутки страницы -->
+		<script>
+			$(document).ready(function(){
+				$("#top-nav").on("click","a", function (event) {
+					//отменяем стандартную обработку нажатия по ссылке
+					event.preventDefault();
+
+					//забираем идентификатор бока с атрибута href
+					var id  = $(this).attr('href'),
+
+					//узнаем высоту от начала страницы до блока на который ссылается якорь
+						top = $(id).offset().top;
+					
+					//анимируем переход на расстояние - top за 1500 мс
+					$('body,html').animate({scrollTop: top}, 500);
+				});
+			});
+		</script>
+	</body>
+</html>
