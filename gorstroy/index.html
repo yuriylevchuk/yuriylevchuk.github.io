@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html>
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
@@ -14,27 +14,45 @@
 	</head>
 
 	<body>
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top d-xl-none mobile_nav">
+			<div class="container">
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
+					<span class="navbar-toggler-icon toggler_icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+					<ul class="navbar-nav text-uppercase">
+						<li class="nav-item"><a href="#types-of-objects" class="nav-link">Чем мы можем Вам помочь</a></li>
+						<li class="nav-item"><a href="#about-company" class="nav-link">О компании</a></li>
+						<li class="nav-item"><a href="#how-we-work" class="nav-link">Как мы проектируем</a></li>
+						<li class="nav-item"><a href="#examples" class="nav-link">Примеры объектов</a></li>
+						<li class="nav-item"><a href="#map" class="nav-link">Контакты</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</nav>
+
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 logo_header">
+					<div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 logo_header text-center">
 						<img src="img/logo.png" alt="Горстрой логотип"  class="img-fluid">
 					</div>
-					<div class="col-md-4 offset-md-1 description">
+					<div class="col-sm-6 col-md-5 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 description">
 						<h5>Проектирование зданий <br>и сооружений в Новосибирске</h5>
 					</div>
-					<div class="col-md-2 phone_header">
-						<a href="tel:+73832238974"><b>8 (383) 223-89-74</b></a>
+					<div class="col-sm-6 col-md-3 offset-md-1 col-lg-3 offset-lg-2 col-xl-2 offset-xl-0 phone_header">
+						<a href="tel:+73832238974"><b>8 (991) 376-11-46</b></a>
 						<span>(многоканальный)</span>
 					</div>
-					<div class="col-md-3 text-center">
+					<div class="col-sm-6 col-xl-3 d-md-none d-xl-block text-center">
 						<a href="#callbackModal" data-toggle="modal" class="btn  callback_btn">Заказать обратный звонок</a>
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<nav id="top-nav">
+		<nav id="top-nav" class="d-none d-xl-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -68,7 +86,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-md-7">
+					<div class="col-lg-7 d-none d-lg-block">
 						<div class="row no-glitter">
 							<div class="col-md-4 text-center balls-item">
 								<img src="img/balls-item-1.png" alt="преимущество-1" class="img-fluid">
@@ -84,7 +102,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4 offset-md-1">
+					<div class="col-md-6 col-lg-4 offset-md-1">
 						<form action="send.php" method="post" class="text-center">
 							<p>Оставьте заявку <br>и получите расчет сметы <br>Вашего проекта </p>
 							<input type="hidden" name="what" value="получить рассчет сметы (шапка)">
@@ -105,10 +123,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 text-center">
+					<div class="col-xs-12 col-sm-6 col-xl-3 text-center types_item">
 
 						<img src="img/type_object_1.jpg" alt="Производственные объекты" class="img-fluid">
-						<div class="to_list_container">
+						<div class="to_list_container mx-auto">
 						<h5>Производственные <br>объекты</h5>
 							<ul>
 								<li>Склады</li>
@@ -120,10 +138,10 @@
 						</div>
 
 					</div>
-					<div class="col-md-3 text-center">
+					<div class="col-xs-12 col-sm-6 col-xl-3 text-center types_item">
 						
 						<img src="img/type_object_2.jpg" alt="Жилые объекты" class="img-fluid">
-						<div class="to_list_container">
+						<div class="to_list_container mx-auto">
 							<h5>Жилые объекты<br><br></h5>
 							<ul>
 								<li>Многоквартирные <br>жилые дома</li>
@@ -133,10 +151,10 @@
 						</div>
 						
 					</div>	
-					<div class="col-md-3 text-center">
+					<div class="col-xs-12 col-sm-6 col-xl-3 text-center types_item">
 
 						<img src="img/type_object_3.jpg" alt="Общественные объекты" class="img-fluid">
-						<div class="to_list_container">
+						<div class="to_list_container mx-auto">
 							<h5>Общественные <br>объекты</h5>
 							<ul>
 								<li>Административные <br>здания</li>
@@ -147,10 +165,10 @@
 							</ul>
 						</div>
 					</div>					
-					<div class="col-md-3 text-center">
+					<div class="col-xs-12 col-sm-6 col-xl-3 text-center types_item">
 
 						<img src="img/type_object_4.jpg" alt="Коммерческие объекты" class="img-fluid">
-						<div class="to_list_container">
+						<div class="to_list_container mx-auto">
 							<h5>Коммерческие<br>объекты</h5>
 							<ul>
 								<li>Торговые центры</li>
@@ -167,7 +185,7 @@
 			</div>
 		</section>
 
-		<section class="support">
+		<section class="support d-none d-lg-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -241,10 +259,10 @@
 						<form action="send.php" method="post">
 							<input type="hidden" name="what" value="получить расчет сметы (поддержка)">
 							<div class="row">
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" placeholder="Ваше Имя" name="name" required>
 								</div>
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="phone" id="phone-2" placeholder="Ваш телефон" required>
 								</div>
 								<div class="col-md-4 text-center">
@@ -269,45 +287,45 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 achieve-item">
+					<div class="col-xs-6 col-sm-6 col-md-3 achieve-item">
 						<div class="row no-gutters">
-							<div class="col-md-2">
+							<div class="col-xs-12 col-md-2">
 								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
 							</div>
-							<div class="col-md-9 offset-md-1">
+							<div class="col-xs-12 col-md-9 offset-md-1">
 								<p><b>Более 340 </b><br>реализованных проектов</p>
 							</div>
 						</div>
 						
 					</div>
-					<div class="col-md-3 achieve-item">
+					<div class="col-xs-6 col-sm-6 col-md-3 achieve-item">
 						<div class="row no-gutters">
-							<div class="col-md-2">
+							<div class="col-xs-12 col-md-2">
 								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
 							</div>
-							<div class="col-md-9 offset-md-1">
+							<div class="col-xs-12 col-md-9 offset-md-1">
 								<p><b>12 лет</b>  успешного <br>решения задач <br>наших клиентов</p>
 							</div>
 						</div>						
 					</div>
-					<div class="col-md-3 achieve-item">
+					<div class="col-xs-6 col-sm-6 col-md-3 achieve-item">
 						<div class="row no-gutters">
-							<div class="col-md-2">
+							<div class="col-xs-12 col-md-2">
 								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
 							</div>
-							<div class="col-md-9 offset-md-1">
+							<div class="col-xs-12 col-md-9 offset-md-1">
 								<p><b>88 %</b> клиентов <br> 
 								повторно обращаются <br> 
 								в организацию</p>
 							</div>
 						</div>							
 					</div>
-					<div class="col-md-3 achieve-item">
+					<div class="col-xs-6 col-sm-6 col-md-3 achieve-item">
 						<div class="row no-gutters">
-							<div class="col-md-2">
+							<div class="col-xs-12 col-md-2">
 								<img src="img/like-icon.png" alt="палец вверх" class="img-fluid">
 							</div>
-							<div class="col-md-9 offset-md-1">
+							<div class="col-xs-12 col-md-9 offset-md-1">
 								<p><b>67 %</b>  заказчиков <br> 
 								приходят <br>
 								по рекомендации</p>
@@ -472,10 +490,10 @@
 						<form action="send.php" method="post">
 							<input type="hidden" name="what" value="получить консультацию (как мы работаем)">
 							<div class="row">
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="name" placeholder="Ваше Имя" required>
 								</div>
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="phone" id="phone-3" placeholder="Ваш телефон" required>
 								</div>
 								<div class="col-md-4 text-center">
@@ -587,10 +605,10 @@
 						<form action="send.php" method="post">
 							<input type="hidden" name="what" value="подобрать вариант размещения объекта (примеры объектов)">
 							<div class="row">
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="name" placeholder="Ваше Имя" required>
 								</div>
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="phone" id="phone-4" placeholder="Ваш телефон" required>
 								</div>
 								<div class="col-md-4 text-center">
@@ -603,7 +621,7 @@
 			</div>
 		</section>
 
-		<section id="guarantee">
+		<section id="guarantee" class="d-none d-lg-block">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-11 offset-md-1 text-center guarantee-block">
@@ -614,7 +632,7 @@
 			</div>
 		</section>	
 
-		<section class="clients">
+		<section class="clients d-none d-md-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -662,7 +680,7 @@
 			</div>
 		</section>
 
-		<section class="faq">
+		<section class="faq d-none d-md-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -694,7 +712,7 @@
 			</div>
 		</section>
 
-		<section class="five-steps">
+		<section class="five-steps d-none d-xl-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -728,7 +746,7 @@
 			</div>
 		</section>
 
-		<section class="offer">
+		<section class="offer d-none d-xl-block">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -741,10 +759,10 @@
 						<form action="send.php" method="post">
 							<input type="hidden" name="what" value="подобрать вариант размещения объекта (5 шагов)">
 							<div class="row">
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="name" placeholder="Ваше Имя" required>
 								</div>
-								<div class="col-md-4 text-right">
+								<div class="col-md-4 text-center">
 									<input type="text" name="phone" id="phone-5" placeholder="Ваш телефон" required>
 								</div>
 								<div class="col-md-4 text-center">
@@ -757,7 +775,7 @@
 			</div>
 		</section>
 
-		<section class="map">
+		<section id="map">
 			<div class="container">
 				<div class="row">
 					<div class="col text-center">
@@ -765,17 +783,17 @@
 					</div>
 				</div>
 				<div class="row no-gutters">
-					<div class="col-md-5 point-map">
+					<div class="col-lg-5 point-map">
 						<p>г. Новосибирск, ул. Октябрьская, 42 офис 618 <br>(остановка кинотеатр Маяковского, центр города)</p>
 					</div>
-					<div class="col-md-3 phone-map">
-						<b class="phone-number">8 (383) 223-89-74</b>
+					<div class="d-none d-lg-block col-lg-3 phone-map">
+						<b class="phone-number">8 (991) 376-11-46</b>
 						<span>(многоканальный)</span>
 					</div>
-					<div class="col-md-2 email-map">
+					<div class="d-none d-lg-block col-lg-2 email-map">
 						<p>2238974@mail.ru</p>
 					</div>
-					<div class="col-md-2 work-days-map">
+					<div class="d-none d-lg-block col-lg-2 work-days-map">
 						<p><b>9.00-18.00</b> без обеда <br>
 						Выходной: <b>суббота, <br>воскресенье</b></p>
 					</div>
@@ -788,28 +806,28 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-xs-12 col-lg-2 text-center">
 						<img src="img/logo.png" alt="Горстрой логотип"  class="img-fluid">
 					</div>
-					<div class="col-md-9 offset-md-1">
+					<div class="col-xs-12 col-lg-9 offset-md-1">
 						<div class="row">
-							<div class="col-md-4 email-footer">
+							<div class="col-xs-12 col-lg-4 email-footer">
 								<p>2238974@mail.ru</p>
 							</div>
-							<div class="col-md-4 work-days-footer">
+							<div class="col-xs-12 col-lg-4 work-days-footer">
 								<p><b>9.00-18.00</b> без обеда <br>
 								Выходной: <b>суббота, <br>воскресенье</b></p>			
 							</div>
-							<div class="col-md-4 phone-footer">
-								<a href="tel:+73832238974"><b>8 (383) 223-89-74</b></a>
+							<div class="col-xs-12 col-lg-4 phone-footer">
+								<a href="tel:+73832238974"><b>8 (991) 376-11-46</b></a>
 								<span>(многоканальный)</span>		
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-8">
-								<p>© 2017. Все права защищены.</p>
+							<div class="col-xs-12 col-lg-8 copyright_footer">
+								<p>© 2018. Все права защищены.</p>
 							</div>
-							<div class="col-md-4">
+							<div class="col-xs-12 col-lg-4 collback_footer">
 							<a href="#callbackModal" data-toggle="modal" class="btn callback_btn">Заказать обратный звонок</a>							
 							</div>
 						</div>
