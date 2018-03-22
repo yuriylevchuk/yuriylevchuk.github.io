@@ -880,6 +880,7 @@
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
 		
@@ -926,6 +927,17 @@
 					//анимируем переход на расстояние - top за 1500 мс
 					$('body,html').animate({scrollTop: top}, 500);
 				});
+			});
+		</script>
+		<!-- Скрипт установки маски для полей с телефоном -->
+		<script>
+			$(document).ready(function(){
+  				$('#phone-1').mask('+7(999) 999-9999');
+				$('#phone-2').mask('+7(999) 999-9999');
+				$('#phone-3').mask('+7(999) 999-9999');
+				$('#phone-4').mask('+7(999) 999-9999');
+				$('#phone-5').mask('+7(999) 999-9999');
+				$('#phone-6').mask('+7(999) 999-9999');
 			});
 		</script>
 	</body>
