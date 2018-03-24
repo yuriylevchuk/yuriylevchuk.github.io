@@ -12,17 +12,17 @@
 
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top justify-content-between">
-			<div class="container">
+			<div class="container nav-container">
 				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav text-uppercase">
-						<li class="nav-item"><a href="#header" class="nav-link">Главная</a></li>
-						<li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
-						<li class="nav-item"><a href="#works" class="nav-link">Работы</a></li>
-						<li class="nav-item"><a href="#about-us" class="nav-link">О&nbsp;нас</a></li>
-						<li class="nav-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+						<li class="nav-item text-center"><a href="#header" class="nav-link">Главная</a></li>
+						<li class="nav-item text-center"><a href="#services" class="nav-link">Услуги</a></li>
+						<li class="nav-item text-center"><a href="#works" class="nav-link">Работы</a></li>
+						<li class="nav-item text-center"><a href="#about-us" class="nav-link">О&nbsp;нас</a></li>
+						<li class="nav-item text-center"><a href="#contacts" class="nav-link">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="social-icons">
@@ -335,6 +335,28 @@
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				$(".nav-link").on("click", function(event){
+					if ($("#navbarCollapse").hasClass("show")) {
+						//закрываем меню
+						$('.navbar-toggler').click();
+					}	
+					//отменяем стандартную обработку нажатия по ссылке
+					event.preventDefault();
+
+					//забираем идентификатор бока с атрибута href
+					var id  = $(this).attr('href'),
+
+					//узнаем высоту от начала страницы до блока на который ссылается якорь
+					top = $(id).offset().top;
+
+					//анимируем переход на расстояние - top за 1500 мс
+					$('body,html').animate({scrollTop: top}, 500);
+				});
+			});
+		</script>
 	</body>
 
 </html>
