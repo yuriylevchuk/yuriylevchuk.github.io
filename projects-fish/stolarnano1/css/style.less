@@ -59,6 +59,10 @@ section {
 	padding-bottom: 80px;
 }
 
+button:focus {
+	outline-color: white!important;
+}
+
 input:focus {
 	box-shadow: none!important;
 	border-color: #2f2e2e!important;
@@ -73,12 +77,12 @@ textarea:focus {
 /*===================== НАВИГАЦИЯ =====================*/
 nav {
 	background-color: #2f2e2e;
+	.nav-container {
+		position: relative;
+	}
 	.nav-item {
 		padding-left: 1rem;
 		padding-right: 1rem;
-	}
-	.nav-item:first-child {
-		padding-left: 0;
 	}
 	.nav-item a:hover {
 		text-decoration: underline!important;
@@ -88,6 +92,9 @@ nav {
 	}
 	.social-icons {
 		padding-left: 1rem;
+		position: absolute;
+		top: 10px;
+		right: 20px;
 	}
 }
 
@@ -195,6 +202,12 @@ footer {
 }
 
 @media only screen and (min-width : 992px)  {
+	nav {
+		.nav-item:first-child {
+			padding-left: 0;
+		}
+	}
+	
 	header {
 		background-attachment: fixed;
 	}	
