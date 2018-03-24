@@ -131,7 +131,6 @@ section#services {
 	padding-top: 120px;
 	padding-bottom: 70px;
 	background: url("../img/bg1.png");
-	background-attachment: fixed;
 	color: white;
 	h3 {
 		margin-bottom: 50px;
@@ -201,19 +200,25 @@ footer {
 	}
 }
 
-@media only screen and (min-width : 992px)  {
+/*================== МЕДИА ЗАПРОСЫ =====================*/
+@media only screen and (min-width : 768px)  {
 	nav {
 		.nav-item:first-child {
 			padding-left: 0;
 		}
 	}
-	
+} 
+
+@media only screen and (min-width : 992px)  {
 	header {
 		background-attachment: fixed;
 	}	
+
+	section#services {
+		background-attachment: fixed;
+	}
 	
 	section.background-section {
 		background-attachment: fixed;
 	}
-
 } 
