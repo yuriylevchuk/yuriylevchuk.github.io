@@ -93,9 +93,10 @@ nav {
 
 /*======================= ШАПКА =======================*/
 header {
-	background-image: url("../img/header-bg.jpg") no-repeat;
-	background-attachment: fixed;
+	background: url("../img/header-bg.jpg") no-repeat; 
+	background-position: center center;
 	background-size: cover;
+	
 	.logo-block {
 		margin-top: 150px;
 		margin-bottom: 330px;
@@ -149,14 +150,13 @@ section#works {
 /*======================= О НАС ========================*/
 section#about-us {
 	background: #b1aaaa;
-
 }
 
 /*===================== ТОЛЬКО ФОН ======================*/
 section.background-section {
 	background: url("../img/bg2.jpg") no-repeat;
+	background-position: center center;
 	background-size: cover;
-	background-attachment: fixed;
 	padding-top: 400px;
 }
 
@@ -193,3 +193,14 @@ footer {
 		padding-top: 10px;
 	}
 }
+
+@media only screen and (min-width : 992px)  {
+	header {
+		background-attachment: fixed;
+	}	
+	
+	section.background-section {
+		background-attachment: fixed;
+	}
+
+} 
