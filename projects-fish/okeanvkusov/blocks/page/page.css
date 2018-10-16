@@ -1,3 +1,7 @@
+html {
+  min-height: 100%;
+}
+
 .page {
   position: relative;
   max-width: 960px;
@@ -10,4 +14,11 @@
 .page strong,
 .page b {
   font-weight: 800;
+}
+
+.page_request-form {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

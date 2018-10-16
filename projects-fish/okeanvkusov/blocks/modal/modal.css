@@ -9,6 +9,11 @@
   z-index: 100;
 }
 
+.modal__cover_none {
+  position: static;
+  background: #fff;
+}
+
 .modal__window {
   display: block;
   width: 300px;
@@ -22,6 +27,12 @@
   top: calc(50vh - 132px);
   left: 0;
   right: 0;
+}
+
+.modal__window_relative {
+  position: static;
+  background: #cfcfcf;
+  margin: 20px auto;
 }
 
 .modal__title {

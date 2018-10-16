@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Оставить заявку.Океан вкусов. Выездное обслуживание мероприятий</title>
+  <link rel="stylesheet" href="style.min.css">
+</head>
+<body class="page page_request-form">
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="/" aria-label="Перейти на главную страницу">
+        <img class="logo header__logo" src="blocks/logo/logo.png" width="69" height="63" alt="Логотип компании &laquo;Океан вкусов&raquo;">
+      </a>
+      <p class="header__slogan">Дары моря <br>на вашем столе</p>
+      <a class="header__phone" href="tel:+79772698464"><nobr class="phone">+7 (977) 269-84-64</nobr></a>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">Сайт кейтеринговой компании &laquo;Океан вкусов&raquo;</h1>
+
+    <div class="modal" id="modal">
+      <div class="modal__cover modal__cover_none"></div>
+      <div class="modal__window modal__window_relative"  role="dialog">
+        <p class="modal__title">Оставьте заявку</p>
+        <form action="index.php" method="post">
+          <p class="maodal__input">
+            <label class="modal__label" for="name">Введите Имя</label>
+            <input type="text" name="name" id="name" placeholder="Имя" required>
+          </p>
+          <p>
+            <label class="modal__label" for="phone">Введите телефон</label>
+            <input type="phone" name="phone" id="phone" placeholder="Телефон" required>
+          </p>
+          <button type="submit" class="modal__button modal__button_submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <footer class="footer">
+    <ul class="footer__social-links">
+      <li class="social-links__item"><a class="footer__link footer__link_vk" href="https://vk.com/okean_vkusov" target="_blank" aria-label="ВКонтакте"></a></li>
+      <li class="social-links__item"><a class="footer__link footer__link_instagram" href="https://www.instagram.com/okean_vkusov/" target="_blank" aria-label="Инстаграм"></a></li>
+    </ul>
+    <img class="logo" src="blocks/logo/logo-white.png" width="69" height="63" alt="Логотип компании &laquo;Океан вкусов&raquo;">
+    <p>ООО &laquo;океан вкусов&raquo; <br><nobr class="phone">+7 (977) 269-84-64 |</nobr> okean.vkusov@gmail.com</p>
+  </footer>
+
+</body>
+</html>
