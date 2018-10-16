@@ -1,0 +1,23 @@
+.primary-text {
+  font-family: "OpenSans", "Roboto", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  background-color: #ee390f;
+  color: #fff;
+  font-size: 17px;
+  line-height: 25px;
+  text-transform: uppercase;
+  padding: 25px 0;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 959px) {
+  .primary-text {
+    padding: 25px 10px;
+  }
+}
+
+@media only screen and (max-width: 462px) {
+  .primary-text br {
+    display: none;
+  }
+}

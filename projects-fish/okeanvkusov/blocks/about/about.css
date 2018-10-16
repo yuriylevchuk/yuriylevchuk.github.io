@@ -1,0 +1,146 @@
+.about {
+  background: url("about-background.jpg") center top no-repeat;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about__title {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
+  background: #ee390f;
+  padding: 15px;
+  margin: 0 0 40px 0;
+}
+
+.about__achievements {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 75px 0;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.about__achievements-item {
+  flex: 1 0 50%;
+  margin-bottom: 60px;
+}
+
+.about__primary-text {
+  margin-bottom: 30px;
+}
+
+.about__list {
+  line-height: 20px;
+  margin-left: 100px;
+}
+
+.about__achievements-gallery {
+  background: url("about-gallery-background.jpg") center center no-repeat/cover;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+.about__gallery-slider {
+  margin-bottom: 65px;
+}
+
+.about__gallery-text {
+  color: #fff;
+  line-height: 20px;
+}
+
+.about__gallery-image {
+  width: 100%;
+  height: auto;
+
+}
+
+.about__gallery-slide {
+  margin: 6px;
+  opacity: 0.5;
+  transition: all 300ms ease;
+}
+
+/* Slick */
+
+.slick-center {
+  opacity: 1;
+  outline: 3px solid #fff;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  border: none;
+  border-radius: 50%;
+  top: 50%;
+  font-size: 0px;
+  opacity: 0.8;
+  background: #b1a9a9 url("slider-arrow.png") center center no-repeat;
+}
+
+.slick-arrow:hover,
+.slick-arrow:focus {
+  background-color: #ee3f16;
+}
+
+.slick-arrow:active {
+  opacity: 1;
+}
+
+.slick-next {
+  right: -35px;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  left: -35px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/*end Slick*/
+
+@media only screen and (max-width: 959px) {
+  .about__gallery-text {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about__list {
+    margin: 0 10px;
+  }
+
+  .about__gallery-text {
+    padding: 0 15px;
+  }
+}
+
+
+@media only screen and (max-width: 570px) {
+  .
+  .about__achievements-gallery {
+    padding: 50px 0;
+  }
+
+  .about__achievements {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .about__achievements-item {
+    margin-bottom: 20px;
+  }
+
+  .about__primary-text {
+    padding: 25px 10px;
+  }
+}

@@ -1,0 +1,51 @@
+.exclusive-service {
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  padding-top: 45px;
+}
+
+.exclusive-service__primary-text {
+  margin: 0 0 20px 0;
+  font-weight: 800;
+}
+
+.exclusive-service__text {
+  line-height: 20px;
+  margin: 0 0 20px 0;
+
+}
+
+.exclusive-service__description {
+  background: url("exclusive-service-background.jpg") center center/cover;
+  padding: 25px 10px 60px 10px;
+}
+
+.exclusive-service__item {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 959px) {
+  .exclusive-service__text {
+    padding: 0 10px;
+  }
+
+  .exclusive-service__description .exclusive-service__text {
+    padding: 0;
+  }
+}
+
+
+@media only screen and (max-width: 570px) {
+  .exclusive-service {
+    background: none;
+    padding-top: 0;
+  }
+
+  .exclusive-service__description {
+    background: #efefef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}

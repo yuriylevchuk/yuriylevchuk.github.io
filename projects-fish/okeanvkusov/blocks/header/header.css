@@ -1,0 +1,76 @@
+.header {
+  padding: 7px 0;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__slogan {
+  flex: 0 1 190px;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.header__phone {
+  position: relative;
+  flex: 0 1 175px;
+  padding-left: 20px;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__phone::before {
+  content: "";
+  top: 50%;
+  left: 0;
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  background: url("phone-icon.png");
+  transform: translateY(-50%);
+}
+
+.header__phone:hover {
+  text-decoration: underline;
+}
+
+.header__phone:focus {
+  outline-color: #5ac2ed;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    padding: 7px 10px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-bottom: 15px;
+  }
+
+  .header__slogan,
+  .header__phone {
+    flex: 0 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .header__phone {
+    margin-right: auto;
+  }
+}

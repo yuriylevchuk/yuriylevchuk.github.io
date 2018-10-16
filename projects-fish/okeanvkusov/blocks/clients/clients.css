@@ -1,0 +1,41 @@
+.clients {
+  padding: 35px 10px;
+}
+
+.clients__title {
+  position: relative;
+  margin: 0 0 45px 0;
+}
+
+.clients__title::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  right: 0;
+  top: -30px;
+  border-bottom: 2px solid #ddd;
+}
+
+.clients__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.clients__image {
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .clients__container {
+    justify-content: center;
+  }
+
+  .clients__image {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}

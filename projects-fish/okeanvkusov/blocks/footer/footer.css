@@ -1,0 +1,48 @@
+.footer {
+  padding: 40px 0;
+  background: #0d517e;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  font-size: 8px;
+  line-height: 9px;
+  text-transform: uppercase;
+}
+
+.footer__social-links {
+  max-width: 85px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 15px auto;
+  padding: 0;
+}
+
+.footer__link {
+  width: 33px;
+  height: 33px;
+  display: block;
+  position: relative;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  outline: 2px solid #fff;
+}
+
+.footer__link::before {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 0;
+  top: 0;
+}
+
+.footer__link_vk::before {
+  background: url("vk-icon.png") no-repeat;
+}
+
+.footer__link_instagram::before {
+  background: url("instagram-icon.png") no-repeat;
+}

@@ -1,0 +1,214 @@
+.choice-service {
+  background: url("choice-service-background.jpg") center top no-repeat;
+  text-align: center;
+}
+
+.choice-service__title {
+  font-size: 19px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 0 40px 0;
+}
+
+.choice-service__text {
+  text-align: justify;
+  line-height: 18px;
+  margin: 0 0 25px 0;
+}
+
+.choice-service__questions-title {
+    margin: 0 0 75px 0;
+    text-transform: uppercase;
+}
+
+.choice-service__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 0 30px 0;
+  list-style: none;
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+}
+
+.choice-service__list-item {
+  position: relative;
+  flex: 0 1 25%;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  padding: 75px 0 0 0;
+  box-sizing: border-box;
+}
+
+.choice-service__list-item:nth-child(2) {
+  flex: 1 0 31%;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 45px;
+  border-left: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+}
+
+
+.choice-service__list-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 66px;
+  width: 71px;
+}
+
+.choice-service__list-item:nth-child(1)::before {
+  background: url("choice-service-icon-1.png") top center no-repeat;
+}
+
+.choice-service__list-item:nth-child(2)::before {
+  background: url("choice-service-icon-2.png") top center no-repeat;
+}
+
+.choice-service__list-item:nth-child(3)::before {
+  background: url("choice-service-icon-3.png") top center no-repeat;
+}
+
+.choice-service__list-text {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.choice-service__list-text_selected {
+  color: #ee390f;
+}
+
+.choice-service__full-width-container {
+    background: url("choice-service-background-2.jpg") right top no-repeat;
+}
+
+.choice-service__pre-offer {
+  max-width: 380px;
+  font-size: 17px;
+  margin: 0 480px 50px auto;
+  padding: 100px 0 100px 45px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+}
+
+.choice-service__offer-text {
+  margin-bottom: 60px;
+}
+
+.choice-service__selected-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 860px) {
+  .choice-service {
+    padding: 0 10px;
+  }
+
+  .choice-service__pre-offer {
+    margin-right: auto;
+    color: #fff;
+    padding: 100px 50px;
+    max-width: 480px;
+    border: none;
+  }
+
+  .choice-service__full-width-container {
+    margin-top: 30px;
+    background-position: center top;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .choice-service__list-item {
+    flex: 1 0 30%;
+  }
+
+  .choice-service__list-item:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 15px;
+    flex-shrink: 1;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .choice-service {
+    background: none;
+  }
+
+  .choice-service__list {
+    flex-direction: column;
+    background: #ddd;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+
+  .choice-service__list-item {
+    padding-top: 0;
+    padding-left: 96px;
+    text-align: left;
+  }
+
+  .choice-service__list-item br{
+    display: none;
+  }
+
+  .choice-service__list-item::before {
+    left: 15px;
+    top: 10px;
+    transform: none;
+  }
+
+  .choice-service__list-item:nth-child(2) {
+    border: none;
+    padding-left: 96px;
+    margin: 0;
+  }
+
+  .choice-service__questions-title {
+    margin-bottom: 25px;
+  }
+
+  .choice-service__full-width-container {
+    background-size: cover;
+  }
+
+  .choice-service__selected-text {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 462px) {
+  .choice-service__pre-offer {
+    padding: 100px 25px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .choice-service__offer-text {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .choice-service__list {
+    padding-right: 8px;
+  }
+
+  .choice-service__list-item {
+    padding-left: 89px;
+  }
+
+  .choice-service__list-item::before {
+    left: 8px;
+  }
+}

@@ -1,0 +1,59 @@
+.works {
+  padding: 30px 0;
+}
+
+.works__title {
+  position: relative;
+  margin: 0 0 55px 0;
+}
+
+.works__title::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  right: 0;
+  top: 50px;
+  border-bottom: 2px solid #ddd;
+}
+
+.works__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.works__image {
+  margin: 2px;
+}
+
+.works__text {
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  line-height: 20px;
+  text-align: justify;
+  margin-bottom: 80px;
+}
+
+.works__offer-container {
+  padding: 48px 0;
+  background: url("works-background.jpg") center center/cover;
+}
+
+.works__offer-card {
+  margin: 0 auto;
+  background: rgba(255,255,255, 0.8);
+}
+
+@media only screen and (max-width: 690px) {
+  .works__container {
+    padding: 0 10px;
+  }
+
+  .works__gallery {
+    justify-content: center;
+  }
+
+  .works__text {
+    margin-bottom: 30px;
+  }
+}

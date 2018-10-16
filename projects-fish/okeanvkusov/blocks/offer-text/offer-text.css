@@ -1,0 +1,20 @@
+.offer-text {
+  background-color: #0d517e;
+  color: #fff;
+  font-size: 19px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 25px 50px;
+}
+
+
+@media only screen and (max-width: 462px) {
+  .offer-text {
+    padding: 25px;
+    font-size: 17px;
+  }
+
+  .offer-text br {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.how-cooperation {
+  background: url("how-cooperation-background.png") center 65px no-repeat;
+  padding: 0 10px;
+}
+
+.how-cooperation__title {
+    margin-bottom: 45px;
+}
+
+
+.how-cooperation__list {
+  color: #fff;
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  list-style: none;
+  padding: 65px 0 65px 0;
+  margin-left: auto;
+  max-width: 436px;
+  line-height: 20px;
+}
+
+.how-cooperation__list-item {
+  margin-bottom: 18px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .how-cooperation {
+    background: none;
+  }
+
+  .how-cooperation__list {
+    margin-left: 0;
+    background: #0d517e;
+    max-width: 100%;
+    list-style: circle;
+    padding: 30px;
+  }
+
+  .how-cooperation__title {
+    margin-bottom: 30px;
+  }
+}

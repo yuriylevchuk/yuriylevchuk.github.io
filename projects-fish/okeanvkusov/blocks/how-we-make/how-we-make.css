@@ -1,0 +1,116 @@
+.how-we-make {
+  padding: 70px 0px;
+}
+
+.how-we-make__title {
+  margin: 0 0 45px 0;
+}
+
+.how-we-make__table-container {
+  position: relative;
+  overflow-x: auto;
+}
+
+.how-we-make__table-container-button {
+  position: absolute;
+  background: #979797;
+  background: linear-gradient(to right, transparent, #555);
+  color: #fff;
+  font-size: 20px;
+  top: 0;
+  height: 100%;
+  right: 0;
+  border: none;
+  opacity: 0.8;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+}
+
+.how-we-make__table-container-button::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+  display: block;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+}
+
+.how-we-make__table {
+  font-family: "Roboto", "OpenSans", -aaple-system, Helvetica Neue, Arial, sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom: 1px solid #979797;
+  line-height: 20px;
+  min-width: 660px;
+}
+
+.how-we-make__table td{
+ vertical-align: top;
+}
+
+.how-we-make__table p{
+  margin-top: 0;
+}
+
+.how-we-make__table-heading {
+  font-weight: bold;
+  background: #d9d9d9;
+}
+
+.how-we-make__table-heading td{
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.how-we-make__cell-inner {
+  max-width: 205px;
+}
+
+.how-we-make__table-left-column {
+  padding: 20px;
+  width: 38%;
+}
+
+.how-we-make__table-left-column .how-we-make__cell-inner{
+  margin-left: auto;
+}
+
+.how-we-make__table-center-column {
+  padding: 20px;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+}
+
+.how-we-make__table-right-column {
+  padding: 20px;
+  width: 38%;
+}
+
+.how-we-make__table-right-column .how-we-make__cell-inner{
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .how-we-make {
+    padding: 70px 10px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .how-we-make__table-left-column,
+  .how-we-make__table-center-column,
+  .how-we-make__table-right-column {
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 640px) {
+  .how-we-make__table-container-button {
+    display: block;
+  }
+}
