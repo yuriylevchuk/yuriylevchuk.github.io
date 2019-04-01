@@ -1,2 +1,1 @@
-Open on GitHub Pages
-[levchuk.pro](http://levchuk.pro)
+My personal page
